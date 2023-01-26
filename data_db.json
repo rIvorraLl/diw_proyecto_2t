@@ -65,12 +65,32 @@
     {
       "nombre": "H. P. Lovecraft",
       "biografia": "Howard Phillips Lovecraft (Providence, 20 de agosto de 1890-Providence, 15 de marzo de 1937), más conocido como H. P. Lovecraft, fue un escritor estadounidense, autor de relatos y novelas de terror y ciencia ficción. Se le considera un gran innovador del cuento de terror, al que aportó una mitología propia —los Mitos de Cthulhu—, desarrollada en colaboración con otros autores, actualmente en vigencia. Su obra constituye un clásico del horror cósmico, una línea narrativa que se aparta de las tradicionales historias de terror sobrenatural —satanismo, fantasmas—, incluyendo elementos de ciencia ficción como, por ejemplo, razas alienígenas, viajes en el tiempo o existencia de otras dimensiones.",
+      "libros": "[1]",
       "id": "1"
     },
     {
       "nombre": "Nick Land",
       "biografia": "Nick Land (nacido el 17 de enero de 1962) es un filósofo político inglés, escritor de cuentos de terror, bloguero y 'el padre del aceleracionismo'. Cofundador del colectivo Unidad de Investigación de Cultura Cibernética (CCRU) de los años 90 junto a la teórica ciberfeminista Sadie Plant, su trabajo se ha relacionado con el desarrollo del aceleracionismo y el realismo especulativo.​ Sus escritos han sido descritos como 'teorías-ficciones', un género que se aleja de las convenciones formales de la escritura académica.Land también es conocido, junto con Curtis Yarvin, por desarrollar en sus últimos trabajos las ideas antiigualitarias y antidemocráticas que sustentan la neorreacción y la Ilustración Oscura. Su trabajo posterior se ha centrado cada vez más en la defensa del 'racismo científico' y la eugenesia, o lo que él llama 'hiperracismo'.",
-      "id": "2"
+      "id": "2",
+      "libros": "[4, 5]"
+    },
+    {
+      "nombre": "Franz Kafka",
+      "biografia": "Franz Kafka (Praga, Imperio austrohúngaro, actual capital de República Checa; 3 de julio de 1883-Kierling, Austria; 3 de junio de 1924) fue un escritor bohemio en lengua alemana. Su obra, de las más influyentes de la literatura universal, es una de las pioneras en la fusión de elementos realistas con fantásticos y tiene como principales temas los conflictos paternofiliales, la ansiedad, el existencialismo, la brutalidad física y psicológica, la culpa, la filosofía del absurdo, la burocracia y las transformaciones espirituales.",
+      "id": "3",
+      "libros": "2"
+    },
+    {
+      "nombre": "Karl Kérenyi",
+      "biografia": "Károly (Carl, Karl) Kerényi (Pronunciación en húngaro: /[ˈkaːroj ˈkɛreːɲi]/; Timișoara, 19 de enero de 1897-Kilchberg, 14 de abril de 1973) fue un erudito húngaro en filología clásica y uno de los fundadores de los modernos estudios sobre mitología griega. Kerényi, contempló los aspectos de la religión griega no como curiosidades sino como expresiones de una experiencia humana verdadera.  ",
+      "id": "4",
+      "libros": "3"
+    },
+    {
+      "nombre": "Reza Negarestani",
+      "biografia": "Reza Negarestani (nacido en 1977) es un filósofo y escritor iraní , conocido por \"ser pionero en el género de la 'teoría-ficción' con su libro\" Cyclonopedia, que se publicó en 2008. Fue incluido en Artforum como uno de los mejores libros de 2009. Negarestani dirige el programa de filosofía crítica en el Nuevo Centro de Investigación y Práctica.",
+      "id": "5",
+      "libros": "6"
     }
   ]
 }

@@ -22,14 +22,12 @@ export default {
 
 <template>
   <p v-if="!authors">Loading...</p>
-  <div
-    class="d-flex flex-row flex-wrap justify-content-between w-75 mx-auto mt-5 pt-5"
-  >
+  <div class="d-flex flex-column w-100 mx-auto mt-5 pt-5">
     <div
       v-for="author in authors"
       :key="author.id"
-      class="card mb-3"
-      style="max-width: 540px"
+      class="card mb-3 mx-auto"
+      style="max-width: 800px"
     >
       <div class="row g-0">
         <div class="col-md-4">
@@ -43,6 +41,14 @@ export default {
           <div class="card-body">
             <h5 class="card-title">{{ author.nombre }}</h5>
             <p class="card-text">Autor: {{ author.biografia }}</p>
+            <p class="card-title">Libros en nuestra editorial:</p>
+            <div v-for="libro in author.libros" :key="libro">
+              <img
+                :src="'src/assets/img/' + libro + '.jpg'"
+                class="card-text border rounded"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>

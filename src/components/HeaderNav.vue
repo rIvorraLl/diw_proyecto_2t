@@ -6,7 +6,7 @@
     <!-- <nav class="navbar bg-dark" data-bs-theme="dark"> -->
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"
-        ><img class="w-50" src="../assets/img/logoNoCircle3.png" alt=""
+        ><img height="24" src="../assets/img/logoNoCircle3.png" alt=""
       /></a>
       <button
         class="navbar-toggler"
