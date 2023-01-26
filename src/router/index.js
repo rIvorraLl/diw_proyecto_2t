@@ -24,6 +24,11 @@ const router = createRouter({
       name: "privacidad",
       component: () => import("../views/PrivacyPolicy.vue"),
     },
+    {
+      path: "/autores",
+      name: "autores",
+      component: () => import("../views/CthulhuAutores.vue"),
+    },
     // {
     //   path: "/about",
     //   name: "about",

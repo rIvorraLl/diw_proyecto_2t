@@ -29,6 +29,9 @@
           <li class="nav-item">
             <router-link to="/titulos" class="nav-link">Catálogo</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/autores" class="nav-link">Autores</router-link>
+          </li>
         </ul>
         <form class="d-flex" role="search">
           <input

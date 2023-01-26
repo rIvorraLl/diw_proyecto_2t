@@ -1,0 +1,76 @@
+{
+  "libros": [
+    {
+      "titulo": "Narrativa completa",
+      "autor": "Lovecraft, H. P.",
+      "idioma": "Castellano",
+      "edicion": 2012,
+      "coleccion": "Clásicos literarios",
+      "materia": "Literatura",
+      "precio": 12.98,
+      "id": 1
+    },
+    {
+      "titulo": "La metamorfosis y otros cuentos",
+      "autor": "Kafka, Franz",
+      "idioma": "Castellano",
+      "edicion": 2016,
+      "coleccion": "Clásicos literarios",
+      "materia": "Literatura",
+      "precio": 20.19,
+      "id": 2
+    },
+    {
+      "titulo": "Imágenes primigenias de la religión griega",
+      "autor": "Kerényi, Karl",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Religión",
+      "precio": "18.27",
+      "id": 3
+    },
+    {
+      "titulo": "La Ilustración Oscura",
+      "autor": "Land, Nick",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Filosofía occidental",
+      "precio": "21.15",
+      "id": 4
+    },
+    {
+      "titulo": "Teleoplexia. Ensayos sobre aceleracionismo y horror",
+      "autor": "Land, Nick",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Filosofía occidental",
+      "precio": "23.15",
+      "id": 5
+    },
+    {
+      "titulo": "Ciclonopedia. Complicidad con materiales anónimos",
+      "autor": "Negarestani, Reza",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Filosofía occidental",
+      "precio": "25.95",
+      "id": 6
+    }
+  ],
+  "autores": [
+    {
+      "nombre": "H. P. Lovecraft",
+      "biografia": "Howard Phillips Lovecraft (Providence, 20 de agosto de 1890-Providence, 15 de marzo de 1937), más conocido como H. P. Lovecraft, fue un escritor estadounidense, autor de relatos y novelas de terror y ciencia ficción. Se le considera un gran innovador del cuento de terror, al que aportó una mitología propia —los Mitos de Cthulhu—, desarrollada en colaboración con otros autores, actualmente en vigencia. Su obra constituye un clásico del horror cósmico, una línea narrativa que se aparta de las tradicionales historias de terror sobrenatural —satanismo, fantasmas—, incluyendo elementos de ciencia ficción como, por ejemplo, razas alienígenas, viajes en el tiempo o existencia de otras dimensiones.",
+      "id": "1"
+    },
+    {
+      "nombre": "Nick Land",
+      "biografia": "Nick Land (nacido el 17 de enero de 1962) es un filósofo político inglés, escritor de cuentos de terror, bloguero y 'el padre del aceleracionismo'. Cofundador del colectivo Unidad de Investigación de Cultura Cibernética (CCRU) de los años 90 junto a la teórica ciberfeminista Sadie Plant, su trabajo se ha relacionado con el desarrollo del aceleracionismo y el realismo especulativo.​ Sus escritos han sido descritos como 'teorías-ficciones', un género que se aleja de las convenciones formales de la escritura académica.Land también es conocido, junto con Curtis Yarvin, por desarrollar en sus últimos trabajos las ideas antiigualitarias y antidemocráticas que sustentan la neorreacción y la Ilustración Oscura. Su trabajo posterior se ha centrado cada vez más en la defensa del 'racismo científico' y la eugenesia, o lo que él llama 'hiperracismo'.",
+      "id": "2"
+    }
+  ]
+}
