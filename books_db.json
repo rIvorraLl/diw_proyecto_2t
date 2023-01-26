@@ -1,0 +1,64 @@
+{
+  "libros": [
+    {
+      "titulo": "Narrativa completa",
+      "autor": "Lovecraft, H. P.",
+      "idioma": "Castellano",
+      "edicion": 2012,
+      "coleccion": "Clásicos literarios",
+      "materia": "Literatura",
+      "precio": 12.98,
+      "id": 1
+    },
+    {
+      "titulo": "La metamorfosis y otros cuentos",
+      "autor": "Kafka, Franz",
+      "idioma": "Castellano",
+      "edicion": 2016,
+      "coleccion": "Clásicos literarios",
+      "materia": "Literatura",
+      "precio": 20.19,
+      "id": 2
+    },
+    {
+      "titulo": "Imágenes primigenias de la religión griega",
+      "autor": "Kerényi, Karl",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Religión",
+      "precio": "18.27",
+      "id": 3
+    },
+    {
+      "titulo": "La Ilustración Oscura",
+      "autor": "Land, Nick",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Filosofía occidental",
+      "precio": "21.15",
+      "id": 4
+    },
+    {
+      "titulo": "Teleoplexia. Ensayos sobre aceleracionismo y horror",
+      "autor": "Land, Nick",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Filosofía occidental",
+      "precio": "23.15",
+      "id": 5
+    },
+    {
+      "titulo": "Ciclonopedia. Complicidad con materiales anónimos",
+      "autor": "Negarestani, Reza",
+      "idioma": "Castellano",
+      "edicion": "2021",
+      "coleccion": "Filosofía y ensayo",
+      "materia": "Filosofía occidental",
+      "precio": "25.95",
+      "id": 6
+    }
+  ]
+}
