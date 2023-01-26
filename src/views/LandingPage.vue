@@ -4,10 +4,10 @@ import BookCarousel from "../components/BookCarousel.vue";
 <template>
   <div class="div-img pt-5 mt-5">
     <div
-      class="div-img__txt position-absolute top-50 start-50 p-5 border-success rounded-4 border-opacity-10"
+      class="div-img__txt position-absolute top-50 start-50 p-2 border-success rounded-4 border-opacity-10 d-flex flex-column align-items-center justify-content-center"
     >
       <img src="../assets/img/logoCircleAlpha.png" class="m-auto w-50" alt="" />
-      <h1>Una editorial extraña para lectores extraños</h1>
+      <!-- <h1>Una editorial extraña para lectores extraños</h1> -->
     </div>
   </div>
   <BookCarousel></BookCarousel>
