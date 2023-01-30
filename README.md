@@ -2,7 +2,7 @@
 
 ### Rafael Ivorra Llodrá
 
-Proyecto para las asignaturas DIW y DWEC.
+Proyecto UNIFICADO para las asignaturas DIW y DWEC
 
 2º curso de DAW
 

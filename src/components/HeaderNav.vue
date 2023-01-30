@@ -5,7 +5,7 @@
   >
     <!-- <nav class="navbar bg-dark" data-bs-theme="dark"> -->
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"
+      <a class="navbar-brand" href="#"
         ><img height="24" src="../assets/img/logoNoCircle3.png" alt=""
       /></a>
       <button

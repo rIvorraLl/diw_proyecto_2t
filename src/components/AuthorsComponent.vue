@@ -22,30 +22,25 @@ export default {
 
 <template>
   <p v-if="!authors">Loading...</p>
-  <div class="d-flex flex-column w-100 mx-auto mt-5 pt-5">
-    <div
-      v-for="author in authors"
-      :key="author.id"
-      class="card mb-3 mx-auto"
-      style="max-width: 800px"
-    >
-      <div class="row g-0">
+  <div class="pt-5">
+    <div v-for="author in authors" :key="author.id">
+      <div class="card row mt-5 pb-5 pl-2 pr-2 maxw mx-auto">
         <div class="col-md-4">
           <img
             :src="'src/assets/img/' + 'a' + author.id + '.jpg'"
-            class="img-fluid rounded"
+            class="img-fluid rounded-circle author-img"
             alt="..."
           />
         </div>
         <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">{{ author.nombre }}</h5>
-            <p class="card-text">Autor: {{ author.biografia }}</p>
-            <p class="card-title">Libros en nuestra editorial:</p>
+          <h5 class="card-title">{{ author.nombre }}</h5>
+          <p class="card-text">Autor: {{ author.biografia }}</p>
+          <p class="card-title">Libros en nuestra editorial:</p>
+          <div class="d-flex justify-content-evenly">
             <div v-for="libro in author.libros" :key="libro">
               <img
                 :src="'src/assets/img/' + libro + '.jpg'"
-                class="card-text border rounded"
+                class="border rounded w-50"
                 alt=""
               />
             </div>
@@ -55,3 +50,15 @@ export default {
     </div>
   </div>
 </template>
+
+<style scoped>
+.author-img {
+  max-height: 150px;
+}
+.block {
+  margin-bottom: 10vh;
+}
+.maxw {
+  max-width: 700px;
+}
+</style>

@@ -30,7 +30,7 @@ export default {
       style="max-width: 540px"
     >
       <div class="row g-0">
-        <div class="col-md-4">
+        <div class="col-md-4 img-hover-zoom">
           <img
             :src="'src/assets/img/' + book.id + '.jpg'"
             class="img-fluid rounded-start"
@@ -51,3 +51,20 @@ export default {
     </div>
   </div>
 </template>
+
+<style scoped>
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+</style>
