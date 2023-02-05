@@ -25,25 +25,26 @@ export default {
   <div class="pt-5">
     <div v-for="author in authors" :key="author.id">
       <div class="card row mt-5 pb-5 pl-2 pr-2 maxw mx-auto">
-        <div class="col-md-4">
+        <div class="d-flex mt-3">
           <img
             :src="'src/assets/img/' + 'a' + author.id + '.jpg'"
-            class="img-fluid rounded-circle author-img"
+            class="img-fluid rounded-circle mx-5 author-img"
             alt="..."
           />
+          <div class="col-md-8">
+            <h5 class="card-title">{{ author.nombre }}</h5>
+            <p class="card-text">Autor: {{ author.biografia }}</p>
+          </div>
         </div>
-        <div class="col-md-8">
-          <h5 class="card-title">{{ author.nombre }}</h5>
-          <p class="card-text">Autor: {{ author.biografia }}</p>
-          <p class="card-title">Libros en nuestra editorial:</p>
-          <div class="d-flex justify-content-evenly">
-            <div v-for="libro in author.libros" :key="libro">
-              <img
-                :src="'src/assets/img/' + libro + '.jpg'"
-                class="border rounded w-50"
-                alt=""
-              />
-            </div>
+        <p class="fw-bold">Libros en nuestra editorial:</p>
+        <div class="d-flex justify-content-evenly">
+          <div v-for="libro in author.libros" :key="libro">
+            <img
+              :src="'src/assets/img/' + libro + '.jpg'"
+              class="border rounded w-50"
+              alt=""
+            />
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -59,6 +60,6 @@ export default {
   margin-bottom: 10vh;
 }
 .maxw {
-  max-width: 700px;
+  max-width: 900px;
 }
 </style>

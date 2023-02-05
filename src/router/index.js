@@ -1,16 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import App from "../views/App.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "index",
-      component: App,
-    },
-    {
-      path: "/index",
       name: "landing_page",
       component: () => import("../views/LandingPage.vue"),
     },
@@ -29,14 +23,11 @@ const router = createRouter({
       name: "autores",
       component: () => import("../views/CthulhuAutores.vue"),
     },
-    // {
-    //   path: "/about",
-    //   name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (About.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    // component: () => import("../views/AboutView.vue"),
-    // },
+    {
+      path: "/libro/:id",
+      name: "libro",
+      component: () => import("../views/CthulhuLibro.vue"),
+    },
   ],
 });
 
