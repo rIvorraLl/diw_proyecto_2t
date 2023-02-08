@@ -98,5 +98,11 @@
       "id": "5",
       "libros": "[6]"
     }
+  ],
+  "admin": [
+    {
+      "usuario": "rafael",
+      "contrasenya": "patata123"
+    }
   ]
 }

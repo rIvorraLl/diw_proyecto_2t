@@ -57,38 +57,24 @@
                 >
               </div>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-auto">
-              <!-- Submit button -->
               <button type="submit" class="btn btn-outline-light mb-4">
                 Suscríbeme
               </button>
             </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </form>
       </section>
-      <!-- Section: Form -->
-
-      <!-- Section: Text -->
       <section class="mb-4">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-          optio pariatur est quia magnam eum harum corrupti dicta, aliquam sequi
-          voluptate quas.
+          Una colección de libros para gente un poco rara. Tenemos un poco de
+          todo, pero igual encuentra la selección algo esquinada. No nos hacemos
+          responsables de posibles pérdidas neuronales. Si acaso pruebe en otro
+          lado.
         </p>
       </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Links -->
       <section class="">
-        <!--Grid row-->
         <div class="row">
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Cthulhu Editorial</h5>
 
@@ -98,54 +84,38 @@
               <li>Tel: 555-234783</li>
             </ul>
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
+            <h5 class="text-uppercase">Enlaces</h5>
             <ul class="list-unstyled mb-0">
+              <li></li>
+              <li>
+                <router-link to="/titulos" class="text-white"
+                  >Nuestros libros</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/autores" class="text-white"
+                  >Nuestros autores</router-link
+                >
+              </li>
               <li>
                 <router-link to="/privacidad" class="text-white"
                   >Política de privacidad</router-link
                 >
               </li>
-
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
-              </li>
             </ul>
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
+            <h5 class="text-uppercase">Administración</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Link 4</a>
+                <router-link to="/login" class="text-white"
+                  >Identificación</router-link
+                >
               </li>
             </ul>
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <img class="w-75" src="../assets/img/logoCircleAlpha.png" alt="" />
           </div>

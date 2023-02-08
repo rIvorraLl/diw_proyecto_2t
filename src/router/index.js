@@ -28,6 +28,16 @@ const router = createRouter({
       name: "libro",
       component: () => import("../views/CthulhuLibro.vue"),
     },
+    {
+      path: "/login",
+      name: "login",
+      component: () => import("../views/LoginView.vue"),
+    },
+    {
+      path: "/admin",
+      name: "admin",
+      component: () => import("../views/AdminPage.vue"),
+    },
   ],
 });
 
