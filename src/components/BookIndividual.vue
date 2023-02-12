@@ -30,15 +30,15 @@ export default {
         />
         <div class="col-md-8">
           <h5 class="card-title">{{ book.titulo }}</h5>
-          <p class="card-text">Autor: {{ book.autor }}</p>
-          <p class="card-text">Idioma: {{ book.idioma }}</p>
-          <p class="card-text">Edición: {{ book.edicion }}</p>
-          <p class="card-text">Precio: {{ book.precio }}</p>
+          <p>Autor: {{ book.autor }}</p>
+          <p>Idioma: {{ book.idioma }}</p>
+          <p>Edición: {{ book.edicion }}</p>
+          <p>Precio: {{ book.precio }}</p>
         </div>
       </div>
       <div class="d-flex"></div>
       <p class="fw-bold">Descripción:</p>
-      <p class="card-text"><span v-html="book.descripcion"></span></p>
+      <p><span v-html="book.descripcion"></span></p>
       <div class="book-img">
         <span class="badge text-bg-info card-text">{{ book.materia }}</span>
       </div>

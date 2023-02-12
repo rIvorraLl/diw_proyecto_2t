@@ -22,7 +22,7 @@ export default {
     <p class="mx-auto bg-white p-2 btn">Seleccione un libro para editarlo</p>
     <router-link
       to="/create"
-      class="nav-link active mx-auto bg-white p-2 btn"
+      class="nav-link active mx-auto bg-white p-2 btn mb-2"
       aria-current="page"
       >Crear nuevo libro</router-link
     >
