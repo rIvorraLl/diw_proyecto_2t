@@ -2,12 +2,11 @@
 export default {
   data() {
     return {
-      books: null,
+      books: [],
     };
   },
   methods: {
     async fetchData() {
-      this.books = null;
       const res = await fetch(`http://localhost:3000/libros`);
       this.books = await res.json();
     },
@@ -19,17 +18,23 @@ export default {
 </script>
 <template>
   <p v-if="!books">Loading...</p>
-  <div
-    class="d-flex flex-row flex-wrap justify-content-between w-75 mx-auto mt-5 pt-5"
-  >
+  <div class="mt-5 pt-5 d-flex flex-column">
+    <p class="mx-auto bg-white p-2 btn">Seleccione un libro para editarlo</p>
+    <router-link
+      to="/create"
+      class="nav-link active mx-auto bg-white p-2 btn"
+      aria-current="page"
+      >Crear nuevo libro</router-link
+    >
+  </div>
+  <div class="d-flex flex-row flex-wrap justify-content-between w-75 mx-auto">
     <div
       v-for="book in books"
       :key="book.id"
       class="card mb-3"
       style="max-width: 540px"
     >
-      <!-- <a :href="'/libro/' + book.id"> -->
-      <router-link :to="`/libro/${book.id}`">
+      <router-link :to="`/edit/${book.id}`">
         <div class="row g-0">
           <div class="col-md-4 img-hover-zoom">
             <img
@@ -50,6 +55,9 @@ export default {
           </div>
         </div>
         <!-- </a> -->
+      </router-link>
+      <router-link :to="`/delete/${book.id}`">
+        <button class="btn btn-primary mb-2">Eliminar libro</button>
       </router-link>
     </div>
   </div>

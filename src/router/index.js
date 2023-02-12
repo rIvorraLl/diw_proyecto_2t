@@ -38,6 +38,21 @@ const router = createRouter({
       name: "admin",
       component: () => import("../views/AdminPage.vue"),
     },
+    {
+      path: "/edit/:id",
+      name: "edit",
+      component: () => import("../views/EditBook.vue"),
+    },
+    {
+      path: "/create",
+      name: "create",
+      component: () => import("../views/CreateBook.vue"),
+    },
+    {
+      path: "/delete/:id",
+      name: "delete",
+      component: () => import("../views/DeleteBook.vue"),
+    },
   ],
 });
 

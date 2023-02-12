@@ -2,12 +2,12 @@
 export default {
   data() {
     return {
-      books: null,
+      books: [],
     };
   },
   methods: {
     async fetchData() {
-      this.books = null;
+      // this.books = null;
       const res = await fetch(`http://localhost:3000/libros`);
       this.books = await res.json();
     },
@@ -29,7 +29,7 @@ export default {
       class="card mb-3"
       style="max-width: 540px"
     >
-      <a :href="'/libro/' + book.id">
+      <router-link :to="`/libro/${book.id}`">
         <div class="row g-0">
           <div class="col-md-4 img-hover-zoom">
             <img
@@ -49,7 +49,7 @@ export default {
             </div>
           </div>
         </div>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
