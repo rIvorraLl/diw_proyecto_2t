@@ -6,6 +6,26 @@ export default {
     };
   },
   methods: {
+    getCookie() {
+      const name = "loginOk=";
+      const decoded = decodeURIComponent(document.cookie);
+      const ca = decoded.split(";");
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    },
+    redirect() {
+      if (this.getCookie() == "") {
+        this.$router.push("/login");
+      }
+    },
     async fetchData() {
       const res = await fetch(`http://localhost:3000/libros`);
       this.books = await res.json();
@@ -13,6 +33,8 @@ export default {
   },
   mounted() {
     this.fetchData();
+    this.getCookie();
+    this.redirect();
   },
 };
 </script>

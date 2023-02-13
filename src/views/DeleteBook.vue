@@ -18,6 +18,30 @@ export default {
         "<p class = 'form-control text-success'>Libro eliminado.</p>";
       this.visibility = false;
     },
+    getCookie() {
+      const name = "loginOk=";
+      const decoded = decodeURIComponent(document.cookie);
+      const ca = decoded.split(";");
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    },
+    redirect() {
+      if (this.getCookie() == "") {
+        this.$router.push("/login");
+      }
+    },
+  },
+  mounted() {
+    this.getCookie();
+    this.redirect();
   },
 };
 </script>
