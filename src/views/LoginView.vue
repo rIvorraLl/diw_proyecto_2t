@@ -54,7 +54,7 @@ export default {
                 v-model="textA"
               />
               <label class="form-label" for="form1Example13"
-                >Email address</label
+                >Nombre de usuario</label
               >
             </div>
             <div class="form-outline mb-4">
@@ -64,7 +64,7 @@ export default {
                 class="form-control form-control-lg"
                 v-model="textB"
               />
-              <label class="form-label" for="form1Example23">Password</label>
+              <label class="form-label" for="form1Example23">Contraseña</label>
             </div>
             <div class="d-flex justify-content-around align-items-center mb-4">
               <div class="form-check">
@@ -76,10 +76,9 @@ export default {
                   checked
                 />
                 <label class="form-check-label" for="form1Example3">
-                  Remember me
+                  Recuérdame
                 </label>
               </div>
-              <a href="#!">Forgot password?</a>
             </div>
             <button @click="redirect" class="btn btn-primary btn-lg btn-block">
               Submit

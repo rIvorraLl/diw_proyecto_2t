@@ -70,6 +70,8 @@ Los dos _frameworks_ de desarrollo utilizados son Vue y Bootstrap.
 
       - Las posibilidades de Vue han sido utilizadas para crear distintos _arrays_ dinámicos tanto de libros como de autores y, anidados en estos, sus obras.
 
+      - Se han utilizado cookies para proteger las rutas de administración. Al hacer *login*, se crea una cookie. Si la cookie no está presente al intentar acceder a alguna de las rutas de administración (/admin, /edit/:id, /create, /delete/:id), la web redirecciona a la vista de /login.
+
 2. Parte de Desarrollo Web en Entorno Cliente.
 
    1. Vue.
