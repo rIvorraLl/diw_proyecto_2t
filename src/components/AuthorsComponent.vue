@@ -10,8 +10,6 @@ export default {
       fetch(`http://localhost:3000/autores`)
         .then((response) => response.json())
         .then((data) => (this.authors = data));
-
-      //   this.authors = await getAuthors.json();
     },
   },
   mounted() {
@@ -44,7 +42,6 @@ export default {
               class="border rounded w-50"
               alt=""
             />
-            <!-- </div> -->
           </div>
         </div>
       </div>

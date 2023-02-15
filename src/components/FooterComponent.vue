@@ -99,6 +99,11 @@
                 >
               </li>
               <li>
+                <router-link to="/acerca" class="text-white"
+                  >Nuestra editorial</router-link
+                >
+              </li>
+              <li>
                 <router-link to="/privacidad" class="text-white"
                   >Política de privacidad</router-link
                 >

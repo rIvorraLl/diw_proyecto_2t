@@ -7,7 +7,6 @@ export default {
   },
   methods: {
     async fetchData() {
-      // this.books = null;
       const res = await fetch(`http://localhost:3000/libros`);
       this.books = await res.json();
     },
@@ -19,7 +18,6 @@ export default {
 </script>
 <template>
   <p v-if="!books">Loading...</p>
-  <!-- <pre v-else>{{ books[0].titulo }}</pre> -->
   <div
     class="d-flex flex-row flex-wrap justify-content-between w-75 mx-auto mt-5 pt-5"
   >
@@ -27,11 +25,11 @@ export default {
       v-for="book in books"
       :key="book.id"
       class="card mb-3"
-      style="max-width: 540px"
+      style="max-width: 36rem"
     >
       <router-link :to="`/libro/${book.id}`">
         <div class="row g-0">
-          <div class="col-md-4 img-hover-zoom">
+          <div class="col-md-4 img-hover-zoom img-fluid">
             <img
               :src="'src/assets/img/' + book.id + '.jpg'"
               class="img-fluid rounded-start"
@@ -44,6 +42,7 @@ export default {
               <p class="card-text">Autor: {{ book.autor }}</p>
               <p class="card-text">Idioma: {{ book.idioma }}</p>
               <p class="card-text">Edición: {{ book.edicion }}</p>
+              <p class="card-text">Colección: {{ book.coleccion }}</p>
               <p class="card-text">Precio: {{ book.precio }}</p>
               <span class="badge text-bg-info">{{ book.materia }}</span>
             </div>

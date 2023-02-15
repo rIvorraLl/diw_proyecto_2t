@@ -71,6 +71,7 @@ export default {
               <p class="card-text">Autor: {{ book.autor }}</p>
               <p class="card-text">Idioma: {{ book.idioma }}</p>
               <p class="card-text">Edición: {{ book.edicion }}</p>
+              <p class="card-text">Colección: {{ book.coleccion }}</p>
               <p class="card-text">Precio: {{ book.precio }}</p>
               <span class="badge text-bg-info">{{ book.materia }}</span>
             </div>
