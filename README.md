@@ -14,11 +14,11 @@ Los dos _frameworks_ de desarrollo utilizados son Vue y Bootstrap.
 
    1. Vue.
 
-      - Desarrollo de la estructura básica con Vue y Vue router. La SPA se divide entre diferentes vistas y componentes, que reciben sus respectivas URLs a través de Vue router.
+      - Desarrollo de la estructura básica con Vue y Vue router. La SPA se divide entre diferentes vistas y componentes, que reciben sus respectivas URLs a través de Vue router. Esto permite que las diferentes vistas puedan ser visitadas sin necesidad de recargar la página.
 
       - Cuenta con las siguientes páginas:
 
-        a) _Landing page_, o _Home_.
+        a) _Landing page_, o _Home_. Incluye un carrusel (importado desde un componente) con los últimos titulos editados.
 
         b) Vista general de todos los libros. Haciendo click sobre cualquiera de los títulos, se accede a la vista siguiente.
 
@@ -26,17 +26,19 @@ Los dos _frameworks_ de desarrollo utilizados son Vue y Bootstrap.
 
         d) Página de autores.
 
-        e) Política de privacidad.
+        e) Página "Acerca de".
 
-        f) Página de _login_ para el administrador. Las páginas siguientes son accesibles desde aquí.
+        f) Política de privacidad.
 
-        g) Página de vista de libros para su edición.
+        g) Página de _login_ para el administrador. Las páginas siguientes son accesibles desde aquí. Esta página y las siguientes tienen sus rutas protegidas con autentificación mediante credenciales guardadas en el archivo JSON.
 
-        h) Página de creación de nuevo libro.
+        h) Página de vista de libros para su edición.
 
-        i) Página de edición de libro.
+        i) Página de creación de nuevo libro.
 
-        j) Página de eliminación de libro.
+        j) Página de edición de libro.
+
+        k) Página de eliminación de libro.
 
       - Uso de componentes para modularizar la aplicación. Se utilizan componentes independientes para _header_ y _footer_, así como para las _cards_ de los libros, el carrusel de libros, y los libros individuales.
 
@@ -48,11 +50,11 @@ Los dos _frameworks_ de desarrollo utilizados son Vue y Bootstrap.
 
       - Las utilidades han sido numerosas: márgenes, anchos y altos de página, rellenos (_padding_), texto, espaciado, _flexbox_, _grid_, bordes y redondeo de bordes, colores, texto...
 
-      - Se ha conseguido la adaptación de las páginas a dispositivos con diferentes _viewports_ mediante el uso de etiquetas de Bootstrap al efecto.
+      - Se ha conseguido la adaptación de las páginas a dispositivos con diferentes _viewports_ mediante el uso de etiquetas de Bootstrap al efecto. Todas las páginas son *responsive*, esto es, adaptan su formato dependiendo del tamaño del *viewport*.
 
    3. Multimedia y diseño.
 
-      - Las imágenes se muestran siempre de manera adecuada, sin deformaciones. Han sido editadas para adaptarse al marco en el que debían ser mostradas. Se han utilizado algunas imágenes en formato SVG, tanto de Bootstrap Icons como de unDraw. Otras imágenes decorativas han sido tomadas de Unsplash. Las portadas para los libros han sido creadas individualmente con Canva.
+      - Las imágenes se muestran siempre de manera adecuada, sin deformaciones. Han sido editadas para adaptarse al marco en el que debían ser mostradas. Se han utilizado algunas imágenes en formato SVG, tanto de Bootstrap Icons como de unDraw. Otras imágenes decorativas (fondos) han sido tomadas de Unsplash. Las portadas para los libros han sido creadas individualmente con Canva.
 
       - En el carrusel aparecen tres imágenes, con, supuestamente, los últimos títulos publicados por la editorial. Las imágenes han sido editadas para este marco en concreto.
 
@@ -68,9 +70,9 @@ Los dos _frameworks_ de desarrollo utilizados son Vue y Bootstrap.
 
       - Han sido creadas más páginas de las requeridas.
 
-      - Las posibilidades de Vue han sido utilizadas para crear distintos _arrays_ dinámicos tanto de libros como de autores y, anidados en estos, sus obras.
+      - Las posibilidades de Vue han sido utilizadas para crear distintos _arrays_ dinámicos tanto de libros como de autores y, anidados en estos, sus obras. De este modo, al añadir los datos de un nuevo libro o autor, este pasará a ser incluido automáticamente en su vista respectiva.
 
-      - Se han utilizado cookies para proteger las rutas de administración. Al hacer *login*, se crea una cookie. Si la cookie no está presente al intentar acceder a alguna de las rutas de administración (/admin, /edit/:id, /create, /delete/:id), la web redirecciona a la vista de /login.
+      - Se han utilizado cookies para proteger las rutas de administración. Al hacer *login* con las credenciales correctas (devueltas mediante una petición a la *fake* API), se crea una cookie. Si la cookie no está presente al intentar acceder a alguna de las rutas de administración (/admin, /edit/:id, /create, /delete/:id), la web redirecciona a la vista de /login.
 
 2. Parte de Desarrollo Web en Entorno Cliente.
 
@@ -106,7 +108,7 @@ Los dos _frameworks_ de desarrollo utilizados son Vue y Bootstrap.
 
         - Las operaciones CRUD se realizan con funciones async/await de JavaScript.
 
-        - El encadenamiento de instrucciones asíncronas se incluye en algunas de dichas operaciones.
+        - El encadenamiento de instrucciones asíncronas se incluye, por ejemplo, en la vista de Login, donde se encadenan funciones asíncronas mediante async/await.
 
 
 
