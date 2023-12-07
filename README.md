@@ -1,6 +1,6 @@
 # cthulhu_editores
 
-### Rafael Ivorra Llodrá
+### Rafael Ivorra
 
 ### Proyecto UNIFICADO para las asignaturas DIW y DWEC
 
